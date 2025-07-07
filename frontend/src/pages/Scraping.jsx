@@ -52,6 +52,7 @@ function ScrapingPage() {
         
         //storing the fetched data in data var
         const data = await response.json();
+        console.log(data);
         if (data.success) {
           // Update state
           setRestaurants(data.restaurants);
